@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Registrar Clientes</h1>
+</div>
+<div class="row">
+    <div class="col-6">
+      <!---->
+      <div class="form-group">
+          <label>Identificacion:</label>
+          <input style="width: 80%" [(ngModel)]="cliente.id" class="form-control" placeholder="digite id" type="number" />
+        </div>
+        <div class="form-group">
+            <label>Nombre:</label>
+            <input style="width: 80%" [(ngModel)]="cliente.nombre" class="form-control" placeholder="digite nombre" type="text" />
+          </div>
+    
+          <div class="form-group">
+              <label>Nombre Mascota:</label>
+              <input style="width: 80%" [(ngModel)]="cliente.nombreMascota" class="form-control" placeholder="digite nombre " type="text" />
+            </div>
+
+      <div class="form-group">
+          <label>Correo: </label>
+          <input style="width: 80%" [(ngModel)]="cliente.correo" class="form-control" placeholder="digite correo " type="text" />
+        </div>
+
+      <!---->
+    </div>
+    <div class="col-6">
+      <!---->
+      <div class="form-group">
+          <label>Telefono:</label>
+            <input style="width: 80%" [(ngModel)]="cliente.telefono" class="form-control" placeholder="digite telefono " type="text" />
+        </div>
+    
+
+        <div class="form-group">
+            <label>Apellido:</label>
+            <input style="width: 80%" [(ngModel)]="cliente.apellido" class="form-control" placeholder="digite apellido " type="text" />
+          </div>
+
+
+    
+      <div class="form-group">
+          <label>Raza:</label>
+          <input style="width: 80%" [(ngModel)]="cliente.raza" class="form-control" placeholder="digite raza " type="text" />
+        </div>
+        <div class="form-group">
+            <label>Edad:</label>
+            <input style="width: 80%" [(ngModel)]="cliente.edad" class="form-control" placeholder="digite edad " type="number" />
+          </div>
+
+      <!---->
+    </div>
+  </div>
+
+<div class="form-group">
+  <button (click)="add()" class="btn btn-primary">Registrar</button>
+</div>
+<div>
+</div>

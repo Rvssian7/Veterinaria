@@ -1,0 +1,29 @@
+<div >
+  <h1 class="h2">Lista De Medicos</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th>Identificacion</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Direccion</th>
+      <th>Correo</th>
+      <th>Ver</th>
+    </tr>
+  </thead>
+    <tr *ngFor="let medico of medicos">
+      <td>{{medico.id}}</td>
+      <td>{{medico.nombre}}</td>
+      <td>{{medico.apellido}}</td>
+      <td> {{medico.direccion}} </td>
+      <td> {{medico.correo}} </td>
+      <td><a routerLink="/editarmedico/{{medico.id}}">
+        ver
+        </a>
+        </td>
+      
+    </tr>
+  </table>
+</div>

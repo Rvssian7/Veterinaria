@@ -1,0 +1,31 @@
+<div >
+  <h1 class="h2">Lista De Vacunas</h1>
+</div>
+<div>
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th>Identificacion</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Vacuna</th>
+      <th>Telefono</th>
+      <th>Fecha</th>
+      <th>Ver</th>
+    </tr>
+  </thead>
+    <tr *ngFor="let vacuna of vacunas">
+      <td>{{vacuna.id}}</td>
+      <td>{{vacuna.nombre}}</td>
+      <td>{{vacuna.apellido}}</td>
+      <td> {{vacuna.nombreVacuna}} </td>
+      <td> {{vacuna.telefono}} </td>
+      <td>{{vacuna.fecha}}</td>
+      <td><a routerLink="/editarvacuna/{{vacuna.id}}">
+        ver
+        </a>
+        </td>
+      
+    </tr>
+  </table>
+</div>

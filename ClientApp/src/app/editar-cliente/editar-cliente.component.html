@@ -1,0 +1,63 @@
+<div *ngIf="cliente">
+  <div >
+    <h1 class="h2">Detalle Cliente</h1>
+    <br>
+  </div>
+  <div class="form-group">
+      <label><strong>Identificacion  {{cliente.id}}</strong></label>
+ </div>
+ <div class="row">
+    <div class="col-6">
+      <!---->
+      <div class="form-group">
+          <label>Nombre:
+            <input [(ngModel)]="cliente.nombre"  class="form-control" placeholder="digite nombre" type="text"/>
+          </label>
+          </div>
+      <div class="form-group">
+          <label>Telefono:
+            <input [(ngModel)]="cliente.telefono" class="form-control" placeholder="digite telefono " type="text"  />
+          </label>
+          </div>
+
+      <div class="form-group">
+          <label>Edad:
+            <input [(ngModel)]="cliente.edad" class="form-control" placeholder="digite edad " type="number"  />
+          </label>
+          </div>
+      <div class="form-group">
+          <label>Raza:
+            <input [(ngModel)]="cliente.raza" class="form-control" placeholder="digite raza " type="text"  />
+          </label>
+          </div>
+     <!---->
+    </div>
+
+
+ <div class="col-6">
+    <div class="form-group">
+        <label>Apellido:
+          <input [(ngModel)]="cliente.apellido" class="form-control" placeholder="digite apellido " type="text"  />
+        </label>
+        </div>
+    <div class="form-group">
+        <label>Correo:
+          <input [(ngModel)]="cliente.correo" class="form-control" placeholder="digite correo " type="text"  />
+        </label>
+        </div>
+    <div class="form-group">
+        <label>Nombre Mascota:
+          <input [(ngModel)]="cliente.nombreMascota" class="form-control" placeholder="digite nombre " type="text"  />
+        </label>
+        </div>
+
+  </div>
+
+
+  <div class="form-group">
+  <button (click)="update()" class="btn btn-primary">Actualizar</button>
+  <button (click)="delete()" style="margin-left: 5px" class="btn btn-primary">Eliminar</button>
+  </div>
+
+</div>
+</div>
